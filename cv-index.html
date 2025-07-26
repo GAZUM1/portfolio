@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="cv_title">CV - Mohamed Ragab</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="cv-style.css">
+</head>
+<body>
+
+    <div class="cv-wrapper">
+        <!-- Action Buttons are now outside the main content flow, positioned by CSS -->
+        <div class="action-buttons">
+             <div class="language-switcher">
+                <select id="lang-selector">
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                    <option value="fr">Français</option>
+                </select>
+                <i class="fas fa-globe"></i>
+            </div>
+            <button class="action-btn" onclick="window.print()"><i class="fas fa-print"></i> <span data-lang="print_btn">Print</span></button>
+            <a href="index.html" class="action-btn back-btn"><i class="fas fa-arrow-left"></i> <span data-lang="back_btn">Back</span></a>
+        </div>
+
+        <!-- ==================== LEFT COLUMN (SIDEBAR) ==================== -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <div class="profile-section">
+                    <img src="https://placehold.co/200x200/526D82/FFF?text=MR" alt="Profile Picture" class="profile-img">
+                    <h1 class="name" data-lang="name">Mohamed Ragab</h1>
+                    <h2 class="job-title" data-lang="job_title">Video Editor & Content Creator</h2>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title" data-lang="contact_title">Contact Info</h3>
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i><span>email@example.com</span></li>
+                        <li><i class="fas fa-phone"></i><span>+20 123 456 7890</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i><span data-lang="location">Cairo, Egypt</span></li>
+                        <li><i class="fab fa-linkedin"></i><a href="#" target="_blank">linkedin.com/in/mohamed</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title" data-lang="skills_title">Skills</h3>
+                    <ul class="skills-list">
+                        <li data-lang="skill_1">Video Editing</li>
+                        <li data-lang="skill_2">Color Grading</li>
+                        <li data-lang="skill_3">Visual Effects (VFX)</li>
+                        <li data-lang="skill_5">Sound Design</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title" data-lang="tools_title">Software</h3>
+                     <ul class="skills-list">
+                        <li>Adobe Premiere Pro</li>
+                        <li>Adobe After Effects</li>
+                        <li>CapCut</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title" data-lang="languages_title">Languages</h3>
+                    <ul class="skills-list">
+                        <li data-lang="lang_ar">Arabic (Native)</li>
+                        <li data-lang="lang_en">English (Advanced)</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ==================== RIGHT COLUMN (MAIN CONTENT) ==================== -->
+        <main class="main-content">
+            <section class="main-section">
+                <h2 class="main-title"><i class="fas fa-user-tie"></i><span data-lang="profile_title">Profile</span></h2>
+                <p data-lang="profile_desc">
+                    A passionate and results-driven video editor with a proven track record of transforming creative ideas into engaging and impactful visual content. I possess strong technical skills and the ability to manage projects from concept to final delivery, with a keen eye for detail and quality.
+                </p>
+            </section>
+
+            <section class="main-section">
+                <h2 class="main-title"><i class="fas fa-briefcase"></i><span data-lang="experience_title">Work Experience</span></h2>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-job" data-lang="exp1_job">Senior Video Editor</h3>
+                        <span class="experience-date">2020 - <span data-lang="present">Present</span></span>
+                    </div>
+                    <h4 class="experience-company" data-lang="exp1_company">XYZ Production | Cairo</h4>
+                    <ul class="experience-details">
+                        <li data-lang="exp1_desc1">Led editing and color grading for major projects, including documentaries and commercials.</li>
+                        <li data-lang="exp1_desc2">Developed and improved workflows, increasing post-production team efficiency by 30%.</li>
+                    </ul>
+                </div>
+
+                 <div class="experience-item">
+                    <div class="experience-header">
+                        <h3 class="experience-job" data-lang="exp2_job">Video Editor</h3>
+                        <span class="experience-date">2018 - 2020</span>
+                    </div>
+                    <h4 class="experience-company" data-lang="exp2_company">ABC Advertising Agency | Alexandria</h4>
+                    <ul class="experience-details">
+                        <li data-lang="exp2_desc1">Edited videos for social media platforms, contributing to a 50% increase in follower engagement.</li>
+                        <li data-lang="exp2_desc2">Collaborated with filming and marketing teams to ensure client vision was achieved.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="cv-script.js"></script>
+</body>
+</html>
