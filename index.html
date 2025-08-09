@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang="portfolio_title">بورتفوليو محمد رجب - مونتاج</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo" data-lang="logo_name">محمد رجب</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#hero" class="nav__link" data-lang="nav_home">الرئيسية</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link" data-lang="nav_about">عني</a></li>
+                    <li class="nav__item"><a href="#videos" class="nav__link" data-lang="nav_videos">أعمالي</a></li>
+                    <li class="nav__item"><a href="#channel" class="nav__link" data-lang="nav_channel">قناتي</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link" data-lang="nav_contact">تواصل معي</a></li>
+                </ul>
+            </div>
+            <div class="language-switcher">
+                <i class="fas fa-globe"></i>
+                <select id="lang-selector">
+                    <option value="ar">العربية</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <video autoplay loop muted playsinline class="hero__video">
+                <source src="backgrondvideooo.mp4" type="video/mp4" id="hero-video-source">
+                Your browser does not support the video tag.
+            </video>
+            <div class="hero__overlay"></div>
+            <div class="hero__content container">
+                <h1 class="hero__title" data-lang="hero_title">صناعة محتوى مرئي احترافي</h1>
+                <p class="hero__subtitle" data-lang="hero_subtitle">من المونتاج وتصحيح الألوان إلى المؤثرات البصرية، أحول أفكارك إلى فيديوهات إبداعية.</p>
+                <a href="#videos" class="btn" data-lang="hero_button">شاهد أعمالي</a>
+            </div>
+        </section>
+
+        <section id="about" class="about section">
+            <h2 class="section__title" data-lang="about_title">عني</h2>
+            <div class="about__container container grid">
+                <div class="about__img">
+                    <img src="GAZUM.png" alt="صورة محمد رجب">
+                </div>
+                <div class="about__data">
+                     <p class="about__description" data-lang="about_description">
+                        أنا صانع محتوى ومونتير فيديو شغوف، أمتلك خبرة في استخدام برامج مثل DaVinci Resolve, Adobe Premiere, و After Effects. أهدف إلى تحويل المشاهد الأولية إلى قصص مرئية مؤثرة وجذابة. أسعى دائمًا لتطوير مهاراتي وتقديم أعمال تتجاوز توقعات الجمهور.
+                    </p>
+                    <a href="cv-index.html" target="_blank" class="btn btn--flex">
+                        <span data-lang="about_button_cv">عرض السيرة الذاتية</span>
+                        <i class="fas fa-id-card"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="videos section">
+            <h2 class="section__title" data-lang="videos_title">أبرز أعمالي</h2>
+            <div class="videos__container container grid" id="videos-container">
+                <!-- Videos will be loaded here dynamically from Firestore -->
+            </div>
+        </section>
+
+        <section id="channel" class="channel section">
+            <div class="channel__bg">
+                <div class="channel__container container">
+                    <h2 class="section__title" data-lang="channel_title">تابعني على يوتيوب</h2>
+                    <p class="channel__description" data-lang="channel_desc">اشترك في القناة ليصلك كل جديد في عالم المونتاج وصناعة المحتوى.</p>
+                    <a href="#" class="btn btn--white" target="_blank" data-lang="channel_button">
+                        <i class="fab fa-youtube"></i>
+                        الذهاب إلى القناة
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact section">
+            <h2 class="section__title" data-lang="contact_title">تواصل معي</h2>
+            <div class="contact__container container grid">
+                <div class="contact__form-container">
+                    <form id="contact-form" class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="text" id="contact-name" class="contact__input" required placeholder=" ">
+                                <label for="contact-name" class="contact__label" data-lang="form_name_placeholder">الاسم</label>
+                            </div>
+                            <div class="contact__content">
+                                <input type="email" id="contact-email" class="contact__input" required placeholder=" ">
+                                <label for="contact-email" class="contact__label" data-lang="form_email_placeholder">البريد الإلكتروني</label>
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <textarea id="contact-message" cols="0" rows="7" class="contact__input" required placeholder=" "></textarea>
+                            <label for="contact-message" class="contact__label" data-lang="form_message_placeholder">الرسالة</label>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn--flex">
+                                <span data-lang="send_message">إرسال الرسالة</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <p id="form-message-status"></p>
+                </div>
+                <div class="contact__social">
+                     <a href="https://wa.me/201062955208" target="_blank" class="btn btn--whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-lang="whatsapp_btn">تواصل عبر واتساب</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__copy" data-lang="footer_text">&copy; 2025 جميع الحقوق محفوظة لمحمد رجب.</p>
+        </div>
+    </footer>
+
+    <div class="video__popup" id="video-popup">
+        <div class="video__popup-content">
+            <iframe id="video-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <i class="fas fa-times video__popup-close" id="video-popup-close"></i>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    
+    <!-- Your custom script -->
+    <script src="script.js"></script>
+</body>
+</html>
